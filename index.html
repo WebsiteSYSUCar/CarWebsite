@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device - width, initial-scale = 1">
+	<title>Deepdriving--官方网站</title>
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<!--header-->
+	<header>
+		<!--导航-->
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button id="collapseBtn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+            <span class="sr-only">切换</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+        </button>
+					<a class="navbar-brand" href="#"><span>Deepdriving</span></a>
+				</div>
+				<div class="collapse navbar-collapse" id="example-navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="item">
+							<a class="" href="#" id=""><span class="">首页</span></a>
+						</li>
+						<li class="dropdown item">
+							<a class="" href="#" id=""><span class="">产品介绍</span></a>
+
+						</li>
+						<li class="item">
+							<a class="" href="#" id=""><span class="">技术支持</span></a>
+						</li>
+						<li class="item">
+							<a class="" href="#" id=""><span class="">关于我们</span></a>
+						</li>
+
+					</ul>
+					<form class="navbar-form navbar-right searchicon" role="search">
+						<a class="" href="#" id="searchBtn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-search"></span></a>
+					</form>
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<form class="navbar-form search" role="search" style="visibility:hidden;">
+							<span class="glyphicon glyphicon-search"></span>
+							<div class="form-group">
+								<input type="text" class="form-control text" placeholder="Search">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--content-->
+	<section>
+		<!--轮播图-->
+		<div id="figure" style="height: 500px;">
+
+		</div>
+		<!--产品-->
+		<div id="wrapper" style="height: 500px;">
+
+
+		</div>
+	</section>
+	<!--footer-->
+	<footer id="footer">
+		<div class="centered-wrapper">
+			<div class="footer-link">
+				<!--链接-->
+				<div class="footer1">
+					<h3>网站地图</h3>
+					<div class="tweet1">
+						<div><a href="#" class="now">关于我们</a></div>
+						<div><a href="#" class="now">产品介绍</a></div>
+						<div><a href="#" class="now">技术支持</a></div>
+						<div><a href="#" class="now">加入我们</a></div>
+						<div><a href="#" class="now">联系我们</a></div>
+					</div>
+				</div>
+
+				<div class="footer1">
+					<h3>关于我们</h3>
+					<div class="tweet1">
+						<div>
+							<div><a class="now" href="#">ROBO概况</a></div>
+							<div><a class="now" href="#">发展历程</a></div>
+							<div><a class="now" href="#">使命与愿景</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer1">
+					<h3>产品介绍</h3>
+					<div class="tweet1">
+						<div>
+							<div><a class="now" href="#">手术机器人</a></div>
+							<div><a class="now" href="#">检测机器人</a></div>
+							<div><a class="now" href="#">康复机器人</a></div>
+							<div><a class="now" href="#">服务机器人</a></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer1">
+					<h3>联系我们</h3>
+					<div class="tweet1">
+						<div>
+							<span class="glyphicon glyphicon-phone-alt"></span>
+							<a href="#" class="now">0755-1234567</a>
+						</div>
+
+						<div>
+							<span class="glyphicon glyphicon-envelope"></span>
+							<a href="#" class="now">Deep@xx.com</a>
+						</div>
+
+						<div>
+							<span class="glyphicon glyphicon-map-marker"></span>
+							<a href="#" class="now">深圳市南山区</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--end link-->
+
+
+			<div class="footer-logo">
+				<div class="footer2">
+					<img src="" alt="Deepdriving">
+				</div>
+				<div class="footer2">
+					<img src="" alt="机器人研究所">
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+		</div>
+		<!--end centered-wrapper-->
+
+		<div id="bottomfooter">
+				<div class="">
+					<p>Copyright © 2017 Deepdriving. All Rights Reserved. <a href="#" title="Deepdriving" target="_blank">Deepdriving</a></p>
+				</div>
+		</div>
+		<!--end bottomfooter-->
+	</footer>
+	<!--end footer-->
+
+	<script>
+		$(function() {
+			//collapse button
+			var flags = 0;
+			$('#collapseBtn').click(function() {
+
+				if (flags % 2 === 1) {
+
+					$('.navbar-collapse').css('background', 'rgb(51,51,51)');
+					$('.navbar-header').css('background', 'rgb(51,51,51)');
+					$('#collapseBtn').css('background', 'rgb(51,51,51)').css('border', 'none')
+					$('.navbar-form a span').html("");
+					$('.navbar-nav').css('margin-left', '0%').css('visibility', 'hidden');
+					flags++;
+				} else {
+					$('.navbar-collapse').css('background', 'black');
+					$('.navbar-header').css('background', 'black');
+
+					$('.navbar-form a span').html(" 搜索deepdriving.com");
+					$('.navbar-form').css('text-align', 'center');
+					$('#collapseBtn').css('background', 'black').css('border', 'none');
+					var widthNum = $(window).width() - 150;
+					widthNum = widthNum / 2;
+					$('.navbar-nav').css('margin-left', widthNum).css('visibility', 'visible');
+					flags++;
+				}
+			});
+			$(window).resize(function() {
+				$('.navbar-nav').css('visibility', 'visible');
+				var widthNum = $('.navbar-collapse').width();
+				$('.footer1').css('width', widthNum/6);
+				$('.footer2').css('width', widthNum/6);
+
+			});
+			//end collapse button
+
+			//search buttton
+			$('#searchBtn').click(function() {
+
+				$('.search').css('visibility', 'visible');
+
+			});
+
+
+		})
+	</script>
+</body>
+
+</html>
