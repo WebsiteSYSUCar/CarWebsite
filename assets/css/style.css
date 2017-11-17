@@ -83,6 +83,20 @@ a:link, a:visited, a:hover, a:active {
   margin-right: 0.5rem;
   vertical-align: middle;
 }
+
+
+/*轮播图*/
+.slider-wrapper {
+  width: 950px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
 /*footer*/
 #footer {
   background: rgb(242, 242, 242);
