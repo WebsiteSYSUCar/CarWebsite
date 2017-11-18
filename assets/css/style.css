@@ -76,7 +76,7 @@ a:link, a:visited, a:hover, a:active {
   color: rgb(255, 255, 255);
 }
 
-#searchBtn:focus{
+#searchBtn {
   outline: none;
 }
 
@@ -87,9 +87,10 @@ a:link, a:visited, a:hover, a:active {
   padding-bottom: 20px;
 }
 .centered-wrapper {
-  max-width: 950px;
+  max-width: 1000px;
   margin: 10px auto;
 }
+
 .footer1{
   width: 15rem;
   float: left;
