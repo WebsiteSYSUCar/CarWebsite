@@ -1,0 +1,28 @@
+{
+  "name": "deepdrivingweb",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "server": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebsiteSYSUCar/CarWebsite.git"
+  },
+  "author": "Alvabill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebsiteSYSUCar/CarWebsite/issues"
+  },
+  "homepage": "https://github.com/WebsiteSYSUCar/CarWebsite#readme"
+}
