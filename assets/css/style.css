@@ -87,7 +87,7 @@ a:link, a:visited, a:hover, a:active {
 
 /*轮播图*/
 .slider-wrapper {
-  width: 950px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
