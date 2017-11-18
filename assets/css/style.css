@@ -75,9 +75,7 @@ a:link, a:visited, a:hover, a:active {
   margin-left: -150px;
   color: rgb(255, 255, 255);
 }
-.search .text {
-  width: 300px;
-}
+
 #searchBtn:focus{
   outline: none;
 }
