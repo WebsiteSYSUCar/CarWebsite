@@ -75,53 +75,44 @@ a:link, a:visited, a:hover, a:active {
   margin-left: -150px;
   color: rgb(255, 255, 255);
 }
-.search .text {
-  width: 300px;
-}
-.search span{
-  font-size: 2rem;
-  margin-right: 0.5rem;
-  vertical-align: middle;
-}
 
+#searchBtn {
+  outline: none;
+}
 
 /*轮播图*/
 .slider-wrapper {
-  max-width: 950px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
-
-
-
-
-
-
 
 /*footer*/
 #footer {
   background: rgb(242, 242, 242);
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 .centered-wrapper {
-  width: 950px;
+  max-width: 1000px;
   margin: 10px auto;
 }
 
-.footer1{
-  width: 15rem;
-  float: left;
+.footer1 h3{
+  font-size: 2rem;
 }
 .footer1 a {
+  font-size: 1rem;
   color: black;
 }
 .footer2 {
-  width: 15rem;
-  float: left;
+  margin-top: 50px;
 }
 .clear {clear: both;}
 
 #bottomfooter {
   margin-top: 40px;
   text-align: center;
+}
+#bottomfooter p,#bottomfooter a {
+  font-size: 0.5rem;
 }
