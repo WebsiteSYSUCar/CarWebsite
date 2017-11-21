@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width = device - width, initial-scale = 1">
+	<meta meta name="viewport" content="width=device-width, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no" />
 	<title>Deepdriving--官方网站</title>
 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -70,14 +70,17 @@
 	<!--content-->
 	<section>
 		<!--轮播图-->
-		<!-- <div id="figure" class="slider-wrapper theme-default">
-      <div id="slider" class="nivoSlider">
-          <img src="assets/images/toystory.jpg" data-thumb="assets/images/toystory.jpg" alt="" data-transition="sliceDownRight" />
-          <a href="#"><img src="assets/images/up.jpg" data-thumb="assets/images/up.jpg" alt=""  /></a>
-          <img src="assets/images/walle.jpg" data-thumb="assets/images/walle.jpg" alt="" data-transition="slideInLeft" />
-          <img src="assets/images/nemo.jpg" data-thumb="assets/images/nemo.jpg" alt="" data-transition="boxRainGrowReverse"/>
-      </div>
-		</div> -->
+		<div id="figure" class="slider-wrapper theme-default">
+			<div id="slider" class="nivoSlider">
+				<img src="assets/images/banner1.png" srcset="assets/images/banner1.png 618w, assets/images/small.jpg 400w" sizes="(min-width: 800px) 618px, 400px" alt="" data-transition="sliceDownRight" />
+				<a href="#"><img src="assets/images/banner1.png"
+				 srcset="assets/images/small.jpg 400w, assets/images/banner1.png 618w"
+				 sizes="(min-width: 800px) 618px, 400px"
+				 alt="" /></a>
+				<img src="assets/images/banner3.png" srcset="assets/images/small.jpg 400w, assets/images/banner3.png 618w" sizes="(min-width: 800px) 618px, 400px" alt="" data-transition="slideInLeft" />
+				<img src="assets/images/banner1.png" srcset="assets/images/small.jpg 400w, assets/images/banner1.png 618w" sizes="(min-width: 800px) 618px, 400px" alt="" data-transition="boxRainGrowReverse" />
+			</div>
+		</div>
 		<!--产品-->
 		<div id="wrapper" style="height: 500px;">
 
@@ -86,21 +89,20 @@
 	</section>
 	<!--footer-->
 	<footer id="footer">
-		<div class="centered-wrapper">
-			<div class="footer-link">
+		<div class="container centered-wrapper">
+			<div class="row footer-link">
 				<!--链接-->
-				<div class="footer1">
+				<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 footer1">
 					<h3>网站地图</h3>
 					<div class="tweet1">
 						<div><a href="#" class="now">关于我们</a></div>
 						<div><a href="#" class="now">产品介绍</a></div>
 						<div><a href="#" class="now">技术支持</a></div>
-						<div><a href="#" class="now">加入我们</a></div>
 						<div><a href="#" class="now">联系我们</a></div>
 					</div>
 				</div>
 
-				<div class="footer1">
+				<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 footer1">
 					<h3>关于我们</h3>
 					<div class="tweet1">
 						<div>
@@ -111,7 +113,7 @@
 					</div>
 				</div>
 
-				<div class="footer1">
+				<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 footer1">
 					<h3>产品介绍</h3>
 					<div class="tweet1">
 						<div>
@@ -123,7 +125,7 @@
 					</div>
 				</div>
 
-				<div class="footer1">
+				<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 footer1">
 					<h3>联系我们</h3>
 					<div class="tweet1">
 						<div>
@@ -143,18 +145,12 @@
 					</div>
 				</div>
 
+				<div class="col-xs-8 col-sm-8 col-md-4 col-lg-4 footer2">
+					<img src="assets/images/logo.png" alt="Deepdriving" style="width:inherit;">
+				</div>
+
 			</div>
 			<!--end link-->
-
-
-			<div class="footer-logo">
-				<div class="footer2">
-					<img src="" alt="Deepdriving" style="width:inherit;">
-				</div>
-				<div class="footer2">
-					<img src="" alt="机器人研究所" style="width:inherit;">
-				</div>
-			</div>
 
 			<div class="clear"></div>
 
@@ -205,7 +201,7 @@
 					widthNum = $('.navbar-collapse').width();
 				else
 					widthNum = $('.navbar-header').width();
-				$('.footer1').css('width', widthNum / 6);
+				// $('.footer1').css('width', widthNum / 6);
 				$('.footer2').css('width', widthNum / 6);
 
 			});
@@ -228,7 +224,8 @@
 					// location.href = "./" + newHtml +".html";
 				}
 			});
-
+			//slider
+			$('#slider').nivoSlider();
 
 
 		})

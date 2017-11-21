@@ -12,6 +12,7 @@ Supports Thumbs: true
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
     margin-bottom:10px;
+		top:-20px;
     -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
     -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
     box-shadow: 0px 1px 5px 0px #4a4a4a;
@@ -32,18 +33,22 @@ Supports Thumbs: true
 	padding: 20px 0;
 }
 .theme-default .nivo-controlNav a {
-	display:inline-block;
-	width:22px;
-	height:22px;
-	background:url(bullets.png) no-repeat;
-	text-indent:-9999px;
-	border:0;
-	margin: 0 2px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(bullets.png) no-repeat;
+    text-indent: -9999px;
+    border: 0;
+    opacity: 0;
+    position: relative;
+    top: -75px;
+    z-index: 100;
+    margin: 0 2px;
 }
 .theme-default .nivo-controlNav a.active {
 	background-position:0 -22px;
 }
-
+.theme-default:hover .nivo-controlNav a { opacity: 0.5; }
 .theme-default .nivo-directionNav a {
 	display:block;
 	width:30px;
@@ -57,13 +62,13 @@ Supports Thumbs: true
     -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
 }
-.theme-default:hover .nivo-directionNav a { opacity: 1; }
+.theme-default:hover .nivo-directionNav a { opacity: 0.5; }
 .theme-default a.nivo-nextNav {
 	background-position:-30px 0;
-	right:15px;
+	right: 0px;
 }
 .theme-default a.nivo-prevNav {
-	left:15px;
+	left: 0px;
 }
 
 .theme-default .nivo-caption {
