@@ -30,6 +30,8 @@ a:link, a:visited, a:hover, a:active {
 .navbar {
   background:rgb(51,51,51);
   border-radius: 0px;
+  padding: 0;
+  margin: 0;
   color: rgb(255, 255, 255);
 }
 .container-fluid {
@@ -80,6 +82,7 @@ a:link, a:visited, a:hover, a:active {
   outline: none;
 }
 
+/*section*/
 /*轮播图*/
 .slider-wrapper {
   width: 100%;
@@ -87,7 +90,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /*content*/
-.item {
+.item, .product-item{
   height: 40rem;
   text-align: center;
   background: rgb(250, 250, 250) content-box;
@@ -97,6 +100,19 @@ a:link, a:visited, a:hover, a:active {
 .item img {
   margin-top: 5rem;
 }
+.product-item img {
+  border-radius: 0.2rem;
+  margin: 1.5rem 0;
+}
+.product-show {
+  margin: 5rem 0;
+  text-align: center;
+}
+.product-show h5 {
+  max-width: 500px;
+  margin: 0.6rem auto;
+}
+/*section end*/
 
 /*footer*/
 #footer {
