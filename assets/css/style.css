@@ -43,7 +43,7 @@ a:link, a:visited, a:hover, a:active {
 /*.navbar-nav{
   visibility: hidden;
 }*/
-.navbar-nav .item {
+.navbar-nav .nav-item {
   width: 120px;
   text-align: center;
 }
@@ -58,13 +58,13 @@ a:link, a:visited, a:hover, a:active {
   transition: color 0.3s;
 }
 
-.item span, .navbar-header span {
+.nav-item span, .navbar-header span {
   color: rgb(255, 255, 255);
   transition: color 0.3s;
 
 }
 
-.navbar-header a:hover span,.item a:hover span,.navbar-form a:hover span {
+.navbar-header a:hover span,.nav-item a:hover span,.navbar-form a:hover span {
   color: rgb(183,183,183);
   transition: color 0.3s;
 }
@@ -84,6 +84,18 @@ a:link, a:visited, a:hover, a:active {
 .slider-wrapper {
   width: 100%;
   margin: 0;
+}
+
+/*content*/
+.item {
+  height: 40rem;
+  text-align: center;
+  background: rgb(250, 250, 250) content-box;
+  padding: 1rem 0.4rem;
+  cursor: pointer;
+}
+.item img {
+  margin-top: 5rem;
 }
 
 /*footer*/
@@ -111,8 +123,18 @@ a:link, a:visited, a:hover, a:active {
 
 #bottomfooter {
   margin-top: 40px;
+  padding: 5px 0;
   text-align: center;
+  background: rgb(51, 51, 51);
 }
 #bottomfooter p,#bottomfooter a {
   font-size: 0.5rem;
+  color: rgb(158, 177, 194);
+  margin: 0;
+}
+#bottomfooter a {
+  color: rgb(1, 88, 33);
+}
+#bottomfooter a:hover {
+  color: green;
 }

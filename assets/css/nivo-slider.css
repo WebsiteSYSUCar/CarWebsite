@@ -102,6 +102,7 @@
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
 	text-align:center;
+	background: url(../images/index-bg.png);
 	padding: 15px 0;
 }
 .nivo-controlNav a {

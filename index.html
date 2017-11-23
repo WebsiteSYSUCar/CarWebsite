@@ -35,17 +35,17 @@
 				</div>
 				<div class="collapse navbar-collapse" id="example-navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="item">
+						<li class="nav-item">
 							<a class="" href="#" id=""><span class="">首页</span></a>
 						</li>
-						<li class="dropdown item">
+						<li class="dropdown nav-item">
 							<a class="" href="#" id=""><span class="">产品介绍</span></a>
 
 						</li>
-						<li class="item">
+						<li class="nav-item">
 							<a class="" href="#" id=""><span class="">技术支持</span></a>
 						</li>
-						<li class="item">
+						<li class="nav-item">
 							<a class="" href="#" id=""><span class="">关于我们</span></a>
 						</li>
 
@@ -81,10 +81,26 @@
 				<img src="assets/images/banner1.png" srcset="assets/images/small.jpg 400w, assets/images/banner1.png 618w" sizes="(min-width: 800px) 618px, 400px" alt="" data-transition="boxRainGrowReverse" />
 			</div>
 		</div>
+
 		<!--产品-->
-		<div id="wrapper" style="height: 500px;">
+		<div id="content" class="container">
+			<div class="row items">
+				<div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<h4 style="margin-top:5rem">
+							全向自主移动机器人底盘
+						</h4>
+						<h5>提供你所需的接口</h5>
+						<img src="assets/images/sample1.png" alt="全向自主移动机器人底盘">
+				</div>
+				<div class="item col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<h4 style="margin-top:5rem">
+							全向自动表盘识别巡检机器人
+						</h4>
+						<h5>自动表盘识别巡检</h5>
+						<img src="assets/images/sample2.png" alt="全向自动表盘识别巡检机器人">
+				</div>
 
-
+			</div>
 		</div>
 	</section>
 	<!--footer-->
@@ -196,14 +212,6 @@
 			});
 			$(window).resize(function() {
 				$('.navbar-nav').css('visibility', 'visible');
-				var widthNum;
-				if ($(window).width() > 768)
-					widthNum = $('.navbar-collapse').width();
-				else
-					widthNum = $('.navbar-header').width();
-				// $('.footer1').css('width', widthNum / 6);
-				$('.footer2').css('width', widthNum / 6);
-
 			});
 			//end collapse button
 
