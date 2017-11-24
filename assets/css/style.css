@@ -86,6 +86,7 @@ a:link, a:visited, a:hover, a:active {
   margin: 0;
 }
 
+
 /*content*/
 .item {
   height: 40rem;
@@ -138,3 +139,67 @@ a:link, a:visited, a:hover, a:active {
 #bottomfooter a:hover {
   color: green;
 }
+
+
+
+/**Common CSS**/
+.line {
+    background: rgba(154, 149, 147, 0.46);
+    width: 80px;
+    height: 6px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+
+/************************************
+**product CSS
+************************************8/
+
+/*banner*/
+.nivo-controlNav, .nivo-directionNav {
+  display: none;
+}
+
+/*product*/
+.product-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.product_name {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sub-photo {
+  max-width: 930px;
+  margin: auto;
+}
+.photo {
+  margin-left: -4px;
+  width: 310px;
+  height: 310px;
+}
+
+@media screen and (max-width: 767px) {
+.photo {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 450px !important;;
+  height: 375px;
+}
+}
+
+.product_intro {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/*** prodcut CSS over ***/
+
