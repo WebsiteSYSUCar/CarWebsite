@@ -1,11 +1,13 @@
 * {
   font-size: 14px;
-  font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial","sans-serif";
+  font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 }
+
 body {
-  min-height: 1000px;
+  min-height: 800px;
   min-width: 300px;
 }
+
 li {
   list-style-type: none;
 }
@@ -14,11 +16,10 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-
 @media screen and (max-width: 767px) {
   .navbar-brand {
     position: absolute;
-    left:50%;
+    left: 50%;
     margin-left: -50px;
   }
   #collapseBtn {
@@ -28,32 +29,37 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .navbar {
-  background:rgb(51,51,51);
+  background: rgb(51, 51, 51);
   border-radius: 0px;
   padding: 0;
   margin: 0;
   color: rgb(255, 255, 255);
 }
+
 .container-fluid {
-  background:rgb(51,51,51);
+  background: rgb(51, 51, 51);
   max-width: 980px;
 }
 
 .navbar-nav {
   margin-left: 5rem;
 }
+
 /*.navbar-nav{
   visibility: hidden;
 }*/
+
 .navbar-nav .nav-item {
   width: 120px;
   text-align: center;
 }
+
 .searchicon {
   line-height: 50px;
   margin: 0;
   padding: 0;
 }
+
 .searchicon .glyphicon-search {
   vertical-align: middle;
   color: rgb(255, 255, 255);
@@ -63,11 +69,10 @@ a:link, a:visited, a:hover, a:active {
 .nav-item span, .navbar-header span {
   color: rgb(255, 255, 255);
   transition: color 0.3s;
-
 }
 
-.navbar-header a:hover span,.nav-item a:hover span,.navbar-form a:hover span {
-  color: rgb(183,183,183);
+.navbar-header a:hover span, .nav-item a:hover span, .navbar-form a:hover span {
+  color: rgb(183, 183, 183);
   transition: color 0.3s;
 }
 
@@ -82,60 +87,106 @@ a:link, a:visited, a:hover, a:active {
   outline: none;
 }
 
-/*section*/
+/*section begin*/
+
 /*轮播图*/
+
 .slider-wrapper {
   width: 100%;
   margin: 0;
 }
 
 /*content*/
-.item, .product-item{
+
+.item, .product-item {
   height: 40rem;
   text-align: center;
   background: rgb(250, 250, 250) content-box;
   padding: 1rem 0.4rem;
   cursor: pointer;
 }
+
 .item img {
   margin-top: 5rem;
 }
+
 .product-item img {
   border-radius: 0.2rem;
   margin: 1.5rem 0;
 }
+
 .product-show {
   margin: 5rem 0;
   text-align: center;
 }
+
 .product-show h5 {
   max-width: 500px;
   margin: 0.6rem auto;
 }
+/*About_Deeppdriving*/
+#about {
+  max-width: 980px;
+  margin: 0 100px;
+  overflow: auto;
+}
+.side-nav {
+  float: left;
+  margin: 5rem 0;
+  max-width: 200px;
+}
+.side-nav div {
+  padding: 2rem 4rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px rgb(127, 127, 127) solid;
+}
+.side-nav p {
+  text-align: center;
+  margin: 0;
+}
+.side-nav div:hover,
+.active {
+  background: rgb(121, 126, 126);
+  color: white;
+}
+.content-body {
+  float: left;
+}
+.content-body section {
+  width: auto;
+  height: 500px;
+}
 /*section end*/
 
 /*footer*/
+
 #footer {
   background: rgb(242, 242, 242);
   padding-top: 20px;
   padding-bottom: 0px;
 }
+
 .centered-wrapper {
   max-width: 1000px;
   margin: 10px auto;
 }
 
-.footer1 h3{
+.footer1 h3 {
   font-size: 2rem;
 }
+
 .footer1 a {
   font-size: 1rem;
   color: black;
 }
+
 .footer2 {
   margin-top: 50px;
 }
-.clear {clear: both;}
+
+.clear {
+  clear: both;
+}
 
 #bottomfooter {
   margin-top: 40px;
@@ -143,14 +194,17 @@ a:link, a:visited, a:hover, a:active {
   text-align: center;
   background: rgb(51, 51, 51);
 }
-#bottomfooter p,#bottomfooter a {
+
+#bottomfooter p, #bottomfooter a {
   font-size: 0.5rem;
   color: rgb(158, 177, 194);
   margin: 0;
 }
+
 #bottomfooter a {
   color: rgb(1, 88, 33);
 }
+
 #bottomfooter a:hover {
   color: green;
 }
