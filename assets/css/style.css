@@ -82,19 +82,12 @@ a:link, a:visited, a:hover, a:active {
   margin-left: -150px;
   color: rgb(255, 255, 255);
 }
-<<<<<<< HEAD
 
 #searchBtn {
   outline: none;
 }
 
 /*section begin*/
-=======
-
-#searchBtn {
-  outline: none;
-}
->>>>>>> 81dd46d6f90c3010910910b65506d437e25c467d
 
 /*轮播图*/
 
@@ -103,7 +96,7 @@ a:link, a:visited, a:hover, a:active {
   margin: 0;
 }
 
-<<<<<<< HEAD
+
 /*content*/
 
 .item, .product-item {
@@ -135,13 +128,14 @@ a:link, a:visited, a:hover, a:active {
 /*About_Deeppdriving*/
 #about {
   max-width: 980px;
-  margin: 0 100px;
+  margin: 0 auto;
   overflow: auto;
 }
 .side-nav {
   float: left;
   margin: 5rem 0;
   max-width: 200px;
+  width: 30%;
 }
 .side-nav div {
   padding: 2rem 4rem;
@@ -159,15 +153,16 @@ a:link, a:visited, a:hover, a:active {
 }
 .content-body {
   float: left;
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 2rem;
 }
 .content-body section {
-  width: auto;
-  height: 500px;
+
+  text-align: center;
 }
 /*section end*/
 
-=======
->>>>>>> 81dd46d6f90c3010910910b65506d437e25c467d
 /*footer*/
 
 #footer {
@@ -181,11 +176,7 @@ a:link, a:visited, a:hover, a:active {
   margin: 10px auto;
 }
 
-<<<<<<< HEAD
 .footer1 h3 {
-=======
-.footer1 h3{
->>>>>>> 81dd46d6f90c3010910910b65506d437e25c467d
   font-size: 2rem;
 }
 
@@ -196,13 +187,10 @@ a:link, a:visited, a:hover, a:active {
 
 .footer2 {
   margin-top: 50px;
-<<<<<<< HEAD
 }
 
 .clear {
   clear: both;
-=======
->>>>>>> 81dd46d6f90c3010910910b65506d437e25c467d
 }
 
 #bottomfooter {
@@ -225,6 +213,66 @@ a:link, a:visited, a:hover, a:active {
 #bottomfooter a:hover {
   color: green;
 }
-#bottomfooter p,#bottomfooter a {
-  font-size: 0.5rem;
+
+
+
+/**Common CSS**/
+.line {
+    background: rgba(154, 149, 147, 0.46);
+    width: 80px;
+    height: 6px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
+
+
+/************************************
+**product CSS
+************************************8/
+
+/*banner*/
+/*.nivo-controlNav, .nivo-directionNav {
+  display: none;
+}*/
+
+/*product*/
+.product-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.product_name {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sub-photo {
+  max-width: 930px;
+  margin: auto;
+}
+.photo {
+  margin-left: -4px;
+  width: 310px;
+  height: 310px;
+}
+
+@media screen and (max-width: 767px) {
+.photo {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 450px !important;;
+  height: 375px;
+}
+}
+
+.product_intro {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/*** prodcut CSS over ***/

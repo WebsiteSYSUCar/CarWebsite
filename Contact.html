@@ -5,10 +5,11 @@
   <meta charset="utf-8">
   <meta meta name="viewport" content="width=device-width, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no" />
   <title>Deepdriving--官方网站</title>
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico" >
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 
@@ -27,7 +28,7 @@
             <span class="sr-only">切换</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
         </button>
           <a class="navbar-brand" href="index.html"><span>Deepdriving</span></a>
         </div>
@@ -72,41 +73,66 @@
   <section>
     <!--宣传图-->
     <div class="product-img">
-      <img src="assets/images/intro-banner.png" alt="banner.png" style="width:100%">
+      <img src="assets/images/robo-banner.png" alt="banner.png" style="width:100%">
     </div>
-    <!--介绍-->
-    <div id="about" class="">
-      <div class="side-nav">
-        <div class="side-nav0 active">
-          <p>公司概况</p>
-          <p>Profile</p>
+    <!--产品-->
+    <div id="wrapper" class="contact-wrapper">
+      <div class="contact-topic">
+        <h4>技术支持&联系我们</h4>
+      </div>
+      <div class="line" style="margin-bottom: 30px;"></div>
+      <div class="contact-content">
+        <div class="contact-left-side">
+          <form method="post" name="contactForm" id="contactForm">
+            <div class="personal_info">
+              <fieldset style="float: left;">
+                <img src="assets/images/contact_name.png">
+                <input type="text" name="name" id="name" class="contact-name" placeholder="您的名字">
+              </fieldset>
+              <fieldset style="float: left;">
+                <img src="assets/images/contact_email.png">
+                <input type="text" name="email" id="email" class="contact-email" placeholder="您的邮箱">
+              </fieldset>
+            </div>
+            <fieldset class="yourItem">
+              <img src="assets/images/contact_title.png">
+              <input type="text" name="itemSubject" id="itemSubject" placeholder="您的问题">
+            </fieldset>
+            <fieldset class="itemContent">
+              <textarea name="comments" id="comments" class="comments" placeholder="问题详细内容"></textarea>
+            </fieldset>
+            <fieldset class="contactSubmit">
+              <input type="button" name="send" id="submit"  value="发送消息">
+            </fieldset>
+
+          </form>
         </div>
-        <div class="side-nav1">
-          <p>发展历程</p>
-          <p>Milestones</p>
-        </div>
-        <div class="side-nav2">
-          <p>使命与愿景</p>
-          <p>Mission & Vision</p>
+        <div class="contact-right-side">
+          <ul>
+            <li>
+              <img src="assets/images/Contact1.png">
+              <p>xxxx-xxxxxxx</p>
+            </li>
+            <li>
+              <img src="assets/images/Contact2.png">
+              <p>email@xx.com</p>
+            </li>
+            <li>
+              <img src="assets/images/Contact3.png">
+              <p>公众号</p>
+            </li>
+            <li>
+              <img src="assets/images/Contact4.png">
+              <p>地址</p>
+            </li>
+            <li>
+              <img src="assets/images/two-demension.png" class="two-demension">
+            </li>
+          </ul>
         </div>
       </div>
-      <section class="content-body">
-        <section class="content-nav0" style="display:block">
-          <h3>公司概况</h3>
-          <div class="line"></div>
-        </section>
-        <section class="content-nav1" style="display:none">
-          <h3>发展历程</h3>
-          <div class="line"></div>
-        </section>
-        <section class="content-nav2" style="display:none">
-          <h3>使命与愿景</h3>
-          <div class="line"></div>
-        </section>
-      </section>
     </div>
   </section>
-
   <!--footer-->
   <footer id="footer">
     <div class="container centered-wrapper">
@@ -235,20 +261,6 @@
         }
       });
 
-      //点击切换content
-      $('.side-nav div').click(function(event) {
-        $('.side-nav div').each(function(index, el) {
-          $(".side-nav"+index).removeClass('active');
-          $(".content-nav"+index).css('display', 'none');
-        });
-        $(this).addClass('active');
-        var pos = 0;
-        $('.side-nav div').each(function(index, el) {
-          if(  $(".side-nav"+index).hasClass('active'))
-            pos = index;
-        });
-        $(".content-nav"+pos).css('display', 'block');
-      });
 
 
     })

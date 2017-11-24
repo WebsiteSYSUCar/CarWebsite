@@ -47,7 +47,7 @@
               </ul>
 						</li>
 						<li class="nav-item">
-							<a class="" href="#" id=""><span class="">技术支持</span></a>
+							<a class="" href="Contact.html" id=""><span class="">技术支持</span></a>
 						</li>
 						<li class="nav-item">
 							<a class="" href="About_Deeppdriving.html" id=""><span class="">关于我们</span></a>
@@ -214,17 +214,6 @@
 			});
 			$(window).resize(function() {
 				$('.navbar-nav').css('visibility', 'visible');
-<<<<<<< HEAD
-=======
-				var widthNum;
-				if ($(window).width() > 768)
-					widthNum = $('.navbar-collapse').width();
-				else
-					widthNum = $('.navbar-header').width();
-				// $('.footer1').css('width', widthNum / 6);
-				$('.footer2').css('width', widthNum / 6);
-
->>>>>>> 81dd46d6f90c3010910910b65506d437e25c467d
 			});
 			//end collapse button
 
@@ -236,13 +225,16 @@
 					'box-shadow': 'none'
 				});
 			});
-			var proposals = ['百度1', '百度2', '百度3', '百度4', '百度5', '百度6', '百度7', '呵呵呵呵呵呵呵', '百度', '新浪', 'a1', 'a2', 'a3', 'a4', 'b1', 'b2', 'b3', 'b4'];
+			var proposals = ['全向自主移动机器人底盘', '全向自动表盘识别巡检机器人', '机器人底盘', '百度4', '百度5', '百度6', '百度7', '呵呵呵呵呵呵呵', '百度', '新浪', 'a1', 'a2', 'a3', 'a4', 'b1', 'b2', 'b3', 'b4'];
 			$('#search-form').autocomplete({
 				hints: proposals,
 				width: 300,
 				height: 30,
-				onSubmit: function(newHtml) {
-					// location.href = "./" + newHtml +".html";
+				onSubmit: function(keyword) {
+					var newHtml = new String();
+					if(true)
+						newHtml = "product1";
+					location.href = "./" + newHtml +".html";
 				}
 			});
 			//slider
