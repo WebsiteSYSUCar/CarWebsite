@@ -214,6 +214,17 @@
 			});
 			$(window).resize(function() {
 				$('.navbar-nav').css('visibility', 'visible');
+<<<<<<< HEAD
+=======
+				var widthNum;
+				if ($(window).width() > 768)
+					widthNum = $('.navbar-collapse').width();
+				else
+					widthNum = $('.navbar-header').width();
+				// $('.footer1').css('width', widthNum / 6);
+				$('.footer2').css('width', widthNum / 6);
+
+>>>>>>> 81dd46d6f90c3010910910b65506d437e25c467d
 			});
 			//end collapse button
 

@@ -82,12 +82,19 @@ a:link, a:visited, a:hover, a:active {
   margin-left: -150px;
   color: rgb(255, 255, 255);
 }
+<<<<<<< HEAD
 
 #searchBtn {
   outline: none;
 }
 
 /*section begin*/
+=======
+
+#searchBtn {
+  outline: none;
+}
+>>>>>>> 81dd46d6f90c3010910910b65506d437e25c467d
 
 /*轮播图*/
 
@@ -96,6 +103,7 @@ a:link, a:visited, a:hover, a:active {
   margin: 0;
 }
 
+<<<<<<< HEAD
 /*content*/
 
 .item, .product-item {
@@ -158,6 +166,8 @@ a:link, a:visited, a:hover, a:active {
 }
 /*section end*/
 
+=======
+>>>>>>> 81dd46d6f90c3010910910b65506d437e25c467d
 /*footer*/
 
 #footer {
@@ -171,7 +181,11 @@ a:link, a:visited, a:hover, a:active {
   margin: 10px auto;
 }
 
+<<<<<<< HEAD
 .footer1 h3 {
+=======
+.footer1 h3{
+>>>>>>> 81dd46d6f90c3010910910b65506d437e25c467d
   font-size: 2rem;
 }
 
@@ -182,10 +196,13 @@ a:link, a:visited, a:hover, a:active {
 
 .footer2 {
   margin-top: 50px;
+<<<<<<< HEAD
 }
 
 .clear {
   clear: both;
+=======
+>>>>>>> 81dd46d6f90c3010910910b65506d437e25c467d
 }
 
 #bottomfooter {
@@ -207,4 +224,7 @@ a:link, a:visited, a:hover, a:active {
 
 #bottomfooter a:hover {
   color: green;
+}
+#bottomfooter p,#bottomfooter a {
+  font-size: 0.5rem;
 }
