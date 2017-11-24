@@ -128,13 +128,14 @@ a:link, a:visited, a:hover, a:active {
 /*About_Deeppdriving*/
 #about {
   max-width: 980px;
-  margin: 0 100px;
+  margin: 0 auto;
   overflow: auto;
 }
 .side-nav {
   float: left;
   margin: 5rem 0;
   max-width: 200px;
+  width: 30%;
 }
 .side-nav div {
   padding: 2rem 4rem;
@@ -152,10 +153,13 @@ a:link, a:visited, a:hover, a:active {
 }
 .content-body {
   float: left;
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 2rem;
 }
 .content-body section {
-  width: auto;
-  height: 500px;
+
+  text-align: center;
 }
 /*section end*/
 
@@ -220,7 +224,7 @@ a:link, a:visited, a:hover, a:active {
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 
@@ -229,9 +233,9 @@ a:link, a:visited, a:hover, a:active {
 ************************************8/
 
 /*banner*/
-.nivo-controlNav, .nivo-directionNav {
+/*.nivo-controlNav, .nivo-directionNav {
   display: none;
-}
+}*/
 
 /*product*/
 .product-wrapper {
@@ -272,4 +276,3 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /*** prodcut CSS over ***/
-
