@@ -99,7 +99,7 @@ a:link, a:visited, a:hover, a:active {
 
 /*content*/
 
-.item, .product-item {
+.content-item, .product-item {
   height: 40rem;
   text-align: center;
   background: rgb(250, 250, 250) content-box;
@@ -107,21 +107,25 @@ a:link, a:visited, a:hover, a:active {
   cursor: pointer;
 }
 
-.item img {
+.content-item img {
   margin-top: 5rem;
 }
 
 .product-item img {
   border-radius: 0.2rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
 }
+.active {
 
+}
 .product-show {
   margin: 5rem 0;
   text-align: center;
 }
 
-.product-show h5 {
+.product-show p {
+  text-align: left;
+  white-space: pre-line;
   max-width: 500px;
   margin: 0.6rem auto;
 }
@@ -147,7 +151,7 @@ a:link, a:visited, a:hover, a:active {
   margin: 0;
 }
 .side-nav div:hover,
-.active {
+.side-nav .active {
   background: rgb(121, 126, 126);
   color: white;
 }

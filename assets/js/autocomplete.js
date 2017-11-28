@@ -31,7 +31,7 @@ Author: Lorenzo Cioni - https://github.com/lorecioni
 				.css('height', params.height);
 
 			//Text input
-			var input = $('<input type="text" autocomplete="off" name="query" onkeydown="if(event.keyCode==13){return false;}">')//onkeydown="if(event.keyCode==13){return false;}"  enter不会自动提交数据
+			var input = $('<input type="text" autocomplete="off" name="query"><input type="text" style="display:none">')// enter不会自动提交数据
 				.attr('placeholder', params.placeholder)
 				.addClass('autocomplete-input')
 				.css({

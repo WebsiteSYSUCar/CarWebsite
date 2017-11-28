@@ -38,12 +38,12 @@ $(function() {
     });
   });
 
-  var proposals = ['全向自主移动机器人底盘', '全向自动表盘识别巡检机器人', '联系我们', '技术支持', '关于我们', 'Deepdriving', 'deepdriving'];
+  var proposals = ['四轮独立转向移动机器人', '电站表记识别巡检机器人', '联系我们', '技术支持', '关于我们', 'Deepdriving', 'deepdriving'];
   var searchHtml = function(keyword) {
     var newHtml = new String();
-    if (keyword == '全向自主移动机器人底盘')
+    if (keyword == '四轮独立转向移动机器人')
       newHtml = "product1";
-    else if (keyword == '全向自动表盘识别巡检机器人') {
+    else if (keyword == '电站表记识别巡检机器人') {
       newHtml = "product2";
     } else if (keyword == '联系我们' || keyword == '技术支持') {
       newHtml = "Contact";
