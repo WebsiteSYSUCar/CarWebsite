@@ -162,8 +162,11 @@ a:link, a:visited, a:hover, a:active {
   margin-top: 2rem;
 }
 .content-body section {
-
   text-align: center;
+}
+.content-body p {
+  text-align: left;
+  text-indent: 2rem;
 }
 /*section end*/
 
