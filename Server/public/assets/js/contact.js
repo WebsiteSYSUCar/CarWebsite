@@ -1,24 +1,20 @@
 $(function() {
+   var ok = false;
+   $('#email').blur(function () {
+      if($(this).val().search(/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/)==-1) {
+         $('#error').text('请输入正确的EMAIL格式');
+      } else {
+        ok = true;
+        $('#error').text('');
+      }
+   })
 
     $("#submit").click(function() {
-      const data = {
-        name: $('#name').val(),
-        email: $('#email').val(),
-        itemSubject: $('#itemSubject').val(),
-        itemSubjects: $('#itemSubject').val(),
-      }
-      $.ajax({
-        url: "/sendEmail",
-        type: "post",
-        data: data,
-        async: false,
-        success: function(data, textStatus, xhr) {
-          console.log("data");
-        },
-        error: function(xhr, textStatus, errorThrown) {
-          console.log(xhr);
+       if(ok === false) {
+          return false;
+        } else {
+          $('form').submit();
         }
-      })
     })
 
 })
