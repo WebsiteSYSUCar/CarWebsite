@@ -1,0 +1,111 @@
+.contact-wrapper {
+  max-width: 950px;
+  margin: 20px auto;
+  padding-bottom: 30px;
+}
+.personal_info input, .yourItem input, .contact-wrapper textarea {
+  font-size: 12px;
+  margin: 5px 0;
+  border: 1px solid #f1f1f1;
+  box-shadow: 2px 2px 2px #f1f1f1;
+  color: #a3a3a3;
+}
+.contact-wrapper input {
+  height: 40px;
+  padding: 12px;
+  margin-left: -4px;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+.contact-wrapper img {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.contact-topic {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+.contact-content {
+  overflow: hidden;
+}
+.contact-left-side {
+  max-width: 600px;
+  float: left;
+}
+.personal_info {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.yourItem input {
+    margin-right: 0px;
+    width: 560px;
+}
+.itemContent textarea {
+  margin-top: 20px;
+  width: 600px;
+  height: 240px;
+  padding: 14px;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px #f1f1f1, -2px -2px 2px #f1f1f1;
+  resize: none;
+
+}
+
+
+.contactSubmit input {
+    margin-top: 10px;
+    color: #ffffff;
+    border: none;
+    background: #DE3A47;
+    border-radius: 4px;
+    padding: 12px 48px;
+    font-size: 16px;
+}
+
+.contact-right-side {
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-right-side  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-right-side img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.contact-right-side p {
+    margin-top: 10px;
+    max-width: 100px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #383838;
+}
+.contact-right-side li .two-demension {
+  width: 198px;
+  height: 199px;
+}
+
+
+
+
+/** 响应式 **/
+@media screen and (max-width: 767px)  {
+  .contact-right-side {
+    display: none;
+    width: 100%;
+  }
+  .contact-left-side {
+    margin: auto;
+  }
+
+}
