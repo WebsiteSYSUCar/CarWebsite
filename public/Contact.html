@@ -15,6 +15,7 @@
 
   <link href="assets/css/autocomplete.css" rel="stylesheet">
   <script src="assets/js/autocomplete.js"></script>
+  <script type="text/javascript" src="assets/js/contact.js"></script>
 </head>
 
 <body>
@@ -83,7 +84,7 @@
       <div class="line" style="margin-bottom: 30px;"></div>
       <div class="contact-content">
         <div class="contact-left-side">
-          <form method="post" name="contactForm" id="contactForm">
+           <form method="post" name="contactForm" id="contactForm" action="/sendMail">
             <div class="personal_info">
               <fieldset style="float: left;">
                 <img src="assets/images/contact_name.png">
@@ -92,6 +93,7 @@
               <fieldset style="float: left;">
                 <img src="assets/images/contact_email.png">
                 <input type="text" name="email" id="email" class="contact-email" placeholder="您的邮箱">
+                <span id="error" style="color: red; font-size: 10px;"></span>
               </fieldset>
             </div>
             <fieldset class="yourItem">
@@ -99,12 +101,11 @@
               <input type="text" name="itemSubject" id="itemSubject" placeholder="您的问题">
             </fieldset>
             <fieldset class="itemContent">
-              <textarea name="comments" id="comments" class="comments" placeholder="问题详细内容"></textarea>
+              <textarea name="itemContent" id="itemContent" class="comments" placeholder="问题详细内容"></textarea>
             </fieldset>
             <fieldset class="contactSubmit">
-              <input type="button" name="send" id="submit"  value="发送消息">
+              <button id="submit">发送消息</button>
             </fieldset>
-
           </form>
         </div>
         <div class="contact-right-side">
